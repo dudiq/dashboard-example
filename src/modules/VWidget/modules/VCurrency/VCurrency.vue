@@ -1,7 +1,9 @@
 <template>
-  <div>
+  <div class="v-currency">
     <v-title>{{ currencyTitle }}</v-title>
-    {{ currencyValue }}
+    <div class="v-currency-value">
+      {{ currencyValue }}
+    </div>
   </div>
 </template>
 

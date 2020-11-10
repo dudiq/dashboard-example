@@ -1,16 +1,16 @@
 <template>
-  <v-grid>
+  <v-grid class="v-data-source-view">
     <v-data-source-list
       :sources-list="sourcesList"
     >
       <template #content="{ widgetItem, data, error, isLoading, loadData }">
         <v-widget
-          :title="widgetItem.title"
-          :widget-name="widgetItem.widget"
+          class="v-data-source-view-widget"
+          :widget="widgetItem"
           :data="data"
           :is-loading="isLoading"
           :error="error"
-          :load-data="loadData"
+          @load-data="loadData"
         />
       </template>
     </v-data-source-list>
@@ -41,3 +41,14 @@ export default defineComponent({
   },
 });
 </script>
+
+<style scoped lang="scss">
+.v-data-source-view {
+  display: flex;
+}
+.v-data-source-view-widget {
+  padding: 4px;
+  margin: 8px;
+
+}
+</style>

@@ -14,6 +14,8 @@ export default defineComponent({
 
 <style scoped lang="scss">
 .title {
+  padding: 0;
+  margin: 0;
   font-weight: bold;
   font-size: var(--dash2-font-size-h4);
 }

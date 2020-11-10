@@ -1,11 +1,13 @@
 export const SIZE_HEIGHT = {
-  H26: 'H26',
-  H48: 'H48',
-  H72: 'H72',
-  H112: 'H112',
+  H_26: 'H_26',
+  H_48: 'H_48',
+  H_72: 'H_72',
+  H_112: 'H_112',
 };
 
 export const SIZE_WIDTH = {
-  AUTO: 'AUTO',
-
+  W_48: 'W_48',
+  W_112: 'W_112',
+  W_224: 'W_224',
+  W_420: 'W_420',
 };

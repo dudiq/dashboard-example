@@ -13,7 +13,7 @@ import ContentLayout from '@/common/ContentLayout';
 import VDataSourceView from '@/modules/VDataSourceView';
 import { DATA_SOURCE_NAME } from '@/constants/dataSources';
 import { WIDGET_NAME } from '@/constants/widgets';
-import { SIZE_HEIGHT } from '@/constants/sizes';
+import { SIZE_HEIGHT, SIZE_WIDTH } from '@/constants/sizes';
 import NavigationTop from '@/common/NavigationTop/NavigationTop.vue';
 
 const sourcesList = [
@@ -26,24 +26,24 @@ const sourcesList = [
     priority: 2,
     widgets: [
       {
-        widget: WIDGET_NAME.CURRENCY,
-        title: 'Rub currency',
+        widgetName: WIDGET_NAME.CURRENCY,
+        title: 'currency 1',
         grid: {
           x: 3,
           y: 1,
         },
-        width: 'xl-5',
-        height: SIZE_HEIGHT.H48,
+        width: SIZE_WIDTH.W_224,
+        height: SIZE_HEIGHT.H_48,
       },
       {
-        widget: WIDGET_NAME.CURRENCY,
-        title: 'Sub rub currency',
+        widgetName: WIDGET_NAME.CURRENCY,
+        title: 'Sub currency 1',
         grid: {
           x: 2,
           y: 1,
         },
-        width: 'xl-5',
-        height: SIZE_HEIGHT.H48,
+        width: SIZE_WIDTH.W_420,
+        height: SIZE_HEIGHT.H_48,
       },
     ],
   },
@@ -57,24 +57,24 @@ const sourcesList = [
     priority: 1,
     widgets: [
       {
-        widget: WIDGET_NAME.CURRENCY,
+        widgetName: WIDGET_NAME.CURRENCY,
         title: 'EUR currency',
         grid: {
           x: 1,
           y: 1,
         },
-        width: 'xl-5',
-        height: SIZE_HEIGHT.H48,
+        width: SIZE_WIDTH.W_224,
+        height: SIZE_HEIGHT.H_48,
       },
       {
-        widget: WIDGET_NAME.CURRENCY,
-        title: 'Sub eur currency',
+        widgetName: WIDGET_NAME.CURRENCY,
+        title: 'sub eur',
         grid: {
           x: 1,
           y: 2,
         },
-        width: 'xl-5',
-        height: SIZE_HEIGHT.H48,
+        width: SIZE_WIDTH.W_224,
+        height: SIZE_HEIGHT.H_48,
       },
     ],
   },
@@ -88,14 +88,14 @@ const sourcesList = [
     priority: 1,
     widgets: [
       {
-        widget: WIDGET_NAME.CURRENCY,
+        widgetName: WIDGET_NAME.CURRENCY,
         title: 'GBP currency',
         grid: {
           x: 2,
           y: 2,
         },
-        width: 'xl-5',
-        height: SIZE_HEIGHT.H48,
+        width: SIZE_WIDTH.W_224,
+        height: SIZE_HEIGHT.H_48,
       },
     ],
   },

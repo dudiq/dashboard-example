@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="v-card">
     <slot />
   </div>
 </template>
@@ -11,7 +11,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.card {
+.v-card {
   display: flex;
   background-color: var(--dash2-bgcolor-text-default);
 }
