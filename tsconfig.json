@@ -7,9 +7,12 @@
     "importHelpers": true,
     "moduleResolution": "node",
     "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "sourceMap": true,
+    "noUnusedLocals": true,
+    "sourceMap": false,
+    "strictNullChecks": true,
     "baseUrl": ".",
     "types": [
       "webpack-env",
@@ -18,7 +21,8 @@
     "paths": {
       "@/*": [
         "src/*"
-      ]
+      ],
+      "@/types/*": ["./types/*"]
     },
     "lib": [
       "esnext",
@@ -32,7 +36,8 @@
     "src/**/*.tsx",
     "src/**/*.vue",
     "tests/**/*.ts",
-    "tests/**/*.tsx"
+    "tests/**/*.tsx",
+    "types/*.ts"
   ],
   "exclude": [
     "node_modules"
